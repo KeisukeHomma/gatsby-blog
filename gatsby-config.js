@@ -73,5 +73,15 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-microcms",
+      options: {
+        apiKey: "659a9ceb-dc72-4e47-94bb-bf6a878700f2",
+        serviceId: "gatsby-blog",
+        apis: [{
+          endpoint: "articles",
+        }],
+      },
+    },
   ],
 }
